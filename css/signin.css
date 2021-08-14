@@ -1,0 +1,197 @@
+body {
+  background-color: hsl(228deg 33% 97%);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 650px;
+}
+
+.container-box {
+  width: 300px;
+  background-color: #ffffff;
+  align-self: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0.5px 1px 25px 1px rgba(0, 0, 0, 0.05);
+}
+
+.option-bar {
+  display: flex;
+  margin: 10px 0;
+}
+
+.container-padding {
+  border: 1px solid coral;
+}
+
+.profile-padding {
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0.5px 1px 25px 1px rgba(255, 166, 166, 0.342);
+}
+
+.profile-container {
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid coral;
+  background-color: rgb(250, 184, 160);
+}
+
+.option-menu-items {
+  margin: 0 20px 0 0;
+  padding: 10px 0;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.option-menu-items:first-child {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.option-menu-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.text-note {
+  margin-top: 70px;
+}
+
+.welcome-text {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.welcome-note {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  padding: 5px 0;
+}
+
+.welcome-name {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  padding: 5px 0;
+}
+
+.form-group {
+  padding-right: 15px;
+}
+
+.form-group span {
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 92, 92);
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+.form-control::placeholder {
+  color: rgb(102, 102, 102);
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid silver;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control:focus {
+  border-bottom: 1px solid coral;
+}
+
+.social-login {
+  margin: 20px 0 15px 0;
+  display: flex;
+}
+
+.facebook-icon i {
+  background-color: #1877f2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.google-icon i {
+  background-image: linear-gradient(
+    to bottom,
+    #4285f4,
+    #ea4335,
+    #fbbc05,
+    #4285f4,
+    #34a853,
+    #ea4335
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-login i {
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot-pass-block {
+  margin: 15px 0;
+}
+
+.forgot-pass-block p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-box {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 75%;
+}
+
+.button-box button {
+  background-color: #ff7f50;
+  /* background-color: hsl(45deg 87% 62%); */
+  border: 0;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 20px 1px rgba(247, 150, 112, 0.3);
+}
+
+.button-box button:disabled {
+  background-color: #fab8a0;
+  border: 1px solid coral;
+}
+
+#cpass {
+  display: none;
+}
+
+#hello_text {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow: scroll !important;
+  }
+}

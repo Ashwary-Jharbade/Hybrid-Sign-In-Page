@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/signin.css" />
+    <title>Welcome back!</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="container-box">
+          <div class="option-bar">
+            <div id="login" class="option-menu-items" onclick="login()">
+              <p>Login</p>
+            </div>
+            <div id="signup" class="option-menu-items" onclick="signup()">
+              <p>Sign Up</p>
+            </div>
+            <div class="option-menu-icon">
+              <div class="profile-padding">
+                <div class="profile-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-note" id="welcome_text">
+            <div class="welcome-note">
+              <h1>Welcome Back,</h1>
+            </div>
+            <div class="welcome-name">
+              <h1>Rebbeca</h1>
+            </div>
+          </div>
+          <div class="text-note" id="hello_text">
+            <div class="welcome-note">
+              <h1>Hello there,</h1>
+            </div>
+            <div class="welcome-text">
+              <p>
+                We hope you were missing us this long. Enter the below details
+                and join us.
+              </p>
+            </div>
+          </div>
+          <form>
+            <div class="form-container">
+              <div class="form-group">
+                <label for="email"></label>
+                <input
+                  id="email"
+                  onblur="emailValidation()"
+                  class="form-control"
+                  autocomplete="off"
+                  placeholder="Email address"
+                  type="email"
+                  name="email"
+                  required="true"
+                />
+                <span id="email_error"></span>
+              </div>
+              <div class="form-group">
+                <label for="password"></label>
+                <input
+                  id="pass"
+                  onblur="passValidation()"
+                  class="form-control"
+                  autocomplete="off"
+                  placeholder="Password"
+                  type="password"
+                  name="password"
+                  required="true"
+                />
+                <span id="password_error"></span>
+              </div>
+              <div class="form-group" id="cpass">
+                <label for="cpassword"></label>
+                <input
+                  id="cpassi"
+                  onblur="cpassValidation()"
+                  class="form-control"
+                  autocomplete="off"
+                  placeholder="Confirm password"
+                  type="password"
+                  name="cpassword"
+                  required="true"
+                />
+                <span id="cpassword_error"></span>
+              </div>
+            </div>
+            <div class="forgot-pass-block" id="forgot_block">
+              <p>Forgot password ?</p>
+            </div>
+            <div class="social-login">
+              <div class="facebook-icon">
+                <i class="fa fa-facebook-f"></i>
+              </div>
+              <div class="google-icon">
+                <i class="fa fa-google"></i>
+              </div>
+            </div>
+
+            <div class="button-container">
+              <div class="button-box">
+                <button id="button" onclick="checkValid()" type="submit">
+                  <i class="fa fa-long-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/signin.js"></script>
+  </body>
+</html>
