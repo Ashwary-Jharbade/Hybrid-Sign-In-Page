@@ -1,5 +1,5 @@
 # Hybrid-Sign-In-Page
-####Created a hybrid sign in and sign up page using HTML, CSS and JS also attached Adobe XD design. 
+#### Created a hybrid sign in and sign up page using HTML, CSS and JS also attached Adobe XD design. 
 
 ### Github page link - 
 #### [Demo - Hybrid-Sign-In-Page](https://ashwary-jharbade.github.io/Hybrid-Sign-In-Page/)
